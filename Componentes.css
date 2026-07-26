@@ -1,0 +1,167 @@
+/* ===========================
+   BOTONES
+=========================== */
+
+button{
+    font-family:var(--font);
+    border:none;
+    border-radius:var(--radius);
+    padding:12px 20px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:var(--semi-bold);
+}
+
+#btn-nueva-herramienta,
+#btn-guardar-cambios,
+#btn-guardar-nueva{
+    background:var(--primary);
+    color:white;
+}
+
+#btn-nueva-herramienta:hover,
+#btn-guardar-cambios:hover,
+#btn-guardar-nueva:hover{
+    background:var(--primary-dark);
+}
+
+#btn-cancelar-edicion,
+#btn-cancelar-nueva,
+#btn-filtros{
+    background:white;
+    border:1px solid var(--border);
+    color:var(--text);
+}
+
+#btn-cancelar-edicion:hover,
+#btn-cancelar-nueva:hover,
+#btn-filtros:hover{
+    background:var(--background);
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    font-family:var(--font);
+    font-size:var(--text-size);
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:var(--primary);
+}
+
+/* ===========================
+   LISTA DE HERRAMIENTAS
+=========================== */
+
+.fila-herramienta{
+    display:grid;
+    grid-template-columns:2fr auto 2fr auto;
+    gap:15px;
+    align-items:center;
+    padding:18px;
+    background:white;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    cursor:pointer;
+    transition:.2s;
+}
+
+.fila-herramienta:hover{
+    transform:translateY(-2px);
+}
+
+.herramienta-nombre{
+    font-weight:var(--semi-bold);
+}
+
+.herramienta-ubicacion{
+    color:var(--muted);
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:.8rem;
+    font-weight:var(--bold);
+}
+
+.badge--nueva{
+    background:#d9f7e7;
+    color:var(--success);
+}
+
+.badge--usada{
+    background:#fff4d6;
+    color:var(--warning);
+}
+
+.badge--rota{
+    background:#fde2e2;
+    color:var(--danger);
+}
+
+/* ===========================
+   TABS
+=========================== */
+
+.tab-btn{
+    background:white;
+    border:1px solid var(--border);
+}
+
+.tab-btn--activo{
+    background:var(--primary);
+    color:white;
+}
+
+/* ===========================
+   MODAL
+=========================== */
+
+.modal{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.modal-contenido{
+    position:relative;
+    background:white;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:25px;
+    width:90%;
+    max-width:600px;
+    z-index:2;
+}
+
+.modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
