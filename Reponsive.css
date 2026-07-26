@@ -1,0 +1,95 @@
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width:992px){
+
+    body{
+        padding:20px;
+    }
+
+    .herramientas-acciones{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .buscador{
+        max-width:100%;
+    }
+
+    .fila-herramienta{
+        grid-template-columns:1fr;
+        gap:10px;
+        text-align:left;
+    }
+
+    .detalle-header{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .detalle-tabs{
+        flex-wrap:wrap;
+    }
+
+}
+
+/* ==================================
+   CELULAR
+================================== */
+
+@media (max-width:768px){
+
+    #herramientas,
+    .detalle-panel{
+        padding:20px;
+    }
+
+    .herramientas-header h1{
+        font-size:1.8rem;
+    }
+
+    .detalle-footer,
+    .modal-footer{
+        flex-direction:column;
+    }
+
+    .detalle-footer button,
+    .modal-footer button,
+    .herramientas-acciones button{
+        width:100%;
+    }
+
+    .modal-contenido{
+        width:95%;
+        padding:20px;
+    }
+
+}
+
+/* ==================================
+   CELULARES PEQUEÑOS
+================================== */
+
+@media (max-width:480px){
+
+    body{
+        padding:12px;
+    }
+
+    .herramientas-header h1{
+        font-size:1.5rem;
+    }
+
+    input,
+    select,
+    textarea,
+    button{
+        font-size:.95rem;
+    }
+
+    .fila-herramienta{
+        padding:15px;
+    }
+
+}
